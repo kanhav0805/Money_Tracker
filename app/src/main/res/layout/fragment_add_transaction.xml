@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".ui.AddTransactionFragment">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/appbar">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/transaction_toolbar"
+            style="@style/ThemeOverlay.MaterialComponents.Toolbar.Primary"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:backgroundTint="@color/lightBtn"
+            app:menu="@menu/transaction_menu"
+            app:navigationIcon="@drawable/ic_back"
+            app:title="Expense Manager">
+
+        </com.google.android.material.appbar.MaterialToolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayout4"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="354dp"
+                android:layout_height="58dp"
+                android:layout_marginTop="20dp"
+                android:hint="@string/transaction_title"
+                android:textColorHint="#171616"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:startIconDrawable="@drawable/ic_title">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/transTitleEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLength="18" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayout5"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="354dp"
+                android:layout_height="58dp"
+                android:layout_marginTop="10dp"
+                android:hint="@string/amount"
+                app:layout_constraintEnd_toEndOf="@+id/textInputLayout4"
+                app:layout_constraintTop_toBottomOf="@+id/textInputLayout4"
+                app:startIconDrawable="@drawable/ic_budget">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/transAmountEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayout6"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="354dp"
+                android:layout_height="58dp"
+                android:layout_marginTop="10dp"
+                android:hint="@string/select_date"
+                app:layout_constraintEnd_toEndOf="@+id/textInputLayout5"
+                app:layout_constraintStart_toStartOf="@+id/textInputLayout5"
+                app:layout_constraintTop_toBottomOf="@+id/textInputLayout5"
+                app:startIconDrawable="@drawable/ic_calendar">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/transDateEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <CheckBox
+                android:id="@+id/recurringCheck"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="@string/recurring_transaction"
+                app:layout_constraintStart_toStartOf="@+id/textInputLayout6"
+                app:layout_constraintTop_toBottomOf="@+id/textInputLayout6" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayout7"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="155dp"
+                android:layout_height="58dp"
+                android:layout_marginTop="15dp"
+                android:hint="@string/from_date"
+                app:layout_constraintStart_toStartOf="@+id/recurringCheck"
+                app:layout_constraintTop_toBottomOf="@+id/recurringCheck"
+                app:startIconDrawable="@drawable/ic_calendar">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/transFromDateEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayout9"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="160dp"
+                android:layout_height="58dp"
+                android:hint="@string/to_date"
+                app:layout_constraintEnd_toEndOf="@+id/textInputLayout6"
+                app:layout_constraintTop_toTopOf="@+id/textInputLayout7"
+                app:startIconDrawable="@drawable/ic_calendar">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/transToDateEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/selectCategory"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="@string/select_transaction_category"
+                android:textColor="#F50057"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/textInputLayout9"
+                app:layout_constraintStart_toStartOf="@+id/textInputLayout7"
+                app:layout_constraintTop_toBottomOf="@+id/textInputLayout7" />
+
+            <Spinner
+                android:id="@+id/categorySpinner"
+                android:layout_width="352dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                app:layout_constraintEnd_toEndOf="@+id/selectCategory"
+                app:layout_constraintStart_toStartOf="@+id/selectCategory"
+                app:layout_constraintTop_toBottomOf="@+id/selectCategory" />
+
+            <TextView
+                android:id="@+id/tagTv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/transaction_tag"
+                android:textColor="#F50057"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/categorySpinner"
+                app:layout_constraintStart_toStartOf="@+id/categorySpinner"
+                app:layout_constraintTop_toBottomOf="@+id/categorySpinner" />
+
+            <Spinner
+                android:id="@+id/tagSpinner"
+                android:layout_width="350dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="5dp"
+                app:layout_constraintEnd_toEndOf="@+id/tagTv"
+                app:layout_constraintStart_toStartOf="@+id/tagTv"
+                app:layout_constraintTop_toBottomOf="@+id/tagTv" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayout10"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="354dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="@string/comments"
+                app:layout_constraintEnd_toEndOf="@+id/tagSpinner"
+                app:layout_constraintStart_toStartOf="@+id/tagSpinner"
+                app:layout_constraintTop_toBottomOf="@+id/tagSpinner">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/transCommentsEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:maxLines="200" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/incomeBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="#64DD17"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="@string/income"
+                android:textColor="#101010"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="@+id/textInputLayout10"
+                app:layout_constraintTop_toBottomOf="@+id/textInputLayout10" />
+
+            <Button
+                android:id="@+id/expenseBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#DD1212"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="@string/expense"
+                android:textColor="#0C0C0C"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="@+id/textInputLayout10"
+                app:layout_constraintTop_toTopOf="@+id/incomeBtn" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

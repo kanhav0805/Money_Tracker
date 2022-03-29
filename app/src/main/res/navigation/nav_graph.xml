@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/onboardingFragment">
+
+    <fragment
+        android:id="@+id/onboardingFragment"
+        android:name="com.example.money_tracker.OnboardingFragment"
+        android:label="fragment_onboarding"
+        tools:layout="@layout/fragment_onboarding" >
+        <action
+            android:id="@+id/action_onboardingFragment_to_homeFragment2"
+            app:destination="@id/homeFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment2"
+        android:name="com.example.money_tracker.ui.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment2_to_userDetailFragment"
+            app:destination="@id/userDetailFragment" />
+        <action
+            android:id="@+id/action_homeFragment2_to_addTransactionFragment"
+            app:destination="@id/addTransactionFragment" />
+        <argument
+            android:name="userName"
+            app:argType="string" />
+        <argument
+            android:name="ids"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_homeFragment2_to_month_card_fragment"
+            app:destination="@id/month_card_fragment" />
+        <action
+            android:id="@+id/action_homeFragment2_to_calendarFragment2"
+            app:destination="@id/calendarFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/userDetailFragment"
+        android:name="com.example.money_tracker.UserDetailFragment"
+        android:label="UserDetailFragment" >
+        <action
+            android:id="@+id/action_userDetailFragment_to_homeFragment22"
+            app:destination="@id/homeFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/addTransactionFragment"
+        android:name="com.example.money_tracker.ui.AddTransactionFragment"
+        android:label="fragment_add_transaction"
+        tools:layout="@layout/fragment_add_transaction" >
+        <action
+            android:id="@+id/action_addTransactionFragment_to_homeFragment2"
+            app:destination="@id/homeFragment2" />
+        <argument
+            android:name="id"
+            app:argType="long" />
+    </fragment>
+    <fragment
+        android:id="@+id/month_card_fragment"
+        android:name="com.example.money_tracker.ui.month_card_fragment"
+        android:label="fragment_month_card_fragment"
+        tools:layout="@layout/fragment_month_card_fragment" >
+        <action
+            android:id="@+id/action_month_card_fragment_to_homeFragment2"
+            app:destination="@id/homeFragment2" />
+        <action
+            android:id="@+id/action_month_card_fragment_to_montlyDetailFragment"
+            app:destination="@id/montlyDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/calendarFragment2"
+        android:name="com.example.money_tracker.ui.CalendarFragment"
+        android:label="fragment_calendar"
+        tools:layout="@layout/fragment_calendar" >
+        <action
+            android:id="@+id/action_calendarFragment2_to_homeFragment2"
+            app:destination="@id/homeFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/montlyDetailFragment"
+        android:name="com.example.money_tracker.ui.MontlyDetailFragment"
+        android:label="fragment_montly_detail"
+        tools:layout="@layout/fragment_montly_detail" >
+        <argument
+            android:name="id"
+            app:argType="long" />
+        <action
+            android:id="@+id/action_montlyDetailFragment_to_addTransactionFragment"
+            app:destination="@id/addTransactionFragment" />
+        <action
+            android:id="@+id/action_montlyDetailFragment_to_calendarFragment2"
+            app:destination="@id/calendarFragment2" />
+        <action
+            android:id="@+id/action_montlyDetailFragment_to_month_card_fragment"
+            app:destination="@id/month_card_fragment" />
+        <action
+            android:id="@+id/action_montlyDetailFragment_to_userDetailFragment"
+            app:destination="@id/userDetailFragment" />
+    </fragment>
+</navigation>

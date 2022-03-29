@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/bottom_calendar"
+        android:icon="@drawable/ic_calendar"
+        android:title="@string/daily_expense"
+        android:contentDescription="@string/to_get_your_daily_expenses"
+        app:showAsAction="ifRoom"/>
+    <item android:id="@+id/floatingBtn"
+        android:icon="@drawable/ic_outline_add_circle_24"
+         android:title="@string/add_transaction"
+         android:contentDescription="@string/button_to_add_transaction"
+        app:showAsAction="ifRoom"/>
+    <item android:id="@+id/monthlyExpenses"
+         android:title="@string/monthly_expenses"
+        android:icon="@drawable/ic_monthly"
+        android:contentDescription="@string/to_see_your_monthly_expenses"
+        app:showAsAction="ifRoom"/>
+</menu>

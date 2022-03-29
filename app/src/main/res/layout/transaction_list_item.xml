@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mycard"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:elevation="4dp"
+    app:cardBackgroundColor="#FAF6F7"
+    app:cardCornerRadius="10dp"
+    app:strokeColor="@color/black"
+    app:strokeWidth="2dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <View
+            android:id="@+id/cardv"
+            android:layout_width="15dp"
+            android:layout_height="105dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageView
+            android:id="@+id/imagez"
+            android:layout_width="58dp"
+            android:layout_height="103dp"
+            android:layout_marginStart="8dp"
+            app:layout_constraintStart_toEndOf="@+id/cardv"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_food" />
+
+        <TextView
+            android:id="@+id/date_cv"
+            android:layout_width="100dp"
+            android:layout_height="27dp"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="21/08/2021"
+            android:textColor="#0C0C0C"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.879"
+            app:layout_constraintStart_toStartOf="@+id/title_cv"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/type_cv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text=".Debit Card"
+            android:textAllCaps="true"
+            android:textColor="#FB8C00"
+            app:layout_constraintStart_toStartOf="@+id/title_cv"
+            app:layout_constraintTop_toBottomOf="@+id/title_cv" />
+
+        <TextView
+            android:id="@+id/amount_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="2000"
+            android:textColor="#7CB342"
+            app:layout_constraintEnd_toEndOf="@+id/date_cv"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/date_cv"
+            app:layout_constraintTop_toTopOf="@+id/type_cv" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_rigt_arrow" />
+
+        <TextView
+            android:id="@+id/title_cv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="16dp"
+            android:ellipsize="end"
+            android:ems="8"
+            android:maxLength="15"
+            android:text="TextView"
+            android:textAllCaps="true"
+            android:textColor="#0B0A0A"
+            android:textSize="16sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintStart_toEndOf="@+id/imagez"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</com.google.android.material.card.MaterialCardView>

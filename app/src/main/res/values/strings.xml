@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">Money_Tracker</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="before_we_get_started">BEFORE WE GET STARTED</string>
+    <string name="set_up_your_budget">Set Up Your Budget</string>
+    <string name="name">Name</string>
+    <string name="monthly_budget">Monthly Budget</string>
+    <string name="monthly_income">Monthly Income</string>
+    <string name="save_details">SAVE DETAILS</string>
+    <string name="edit">Edit</string>
+    <string name="icon_to_change_your_data">Icon To Change Your Data</string>
+    <string name="your_credentials">Your Credentials</string>
+    <string name="save_changes">Save Changes</string>
+    <string name="icon_to_change_or_add_transaction">Icon To Change Or Add Transaction</string>
+
+    <string name="icon_to_delete_transaction">Icon To Delete Transaction</string>
+    <string name="delete">Delete</string>
+    <string name="transaction_title">Transaction Title*</string>
+    <string name="amount">Amount*</string>
+    <string name="select_date">Select Date*</string>
+    <string name="recurring_transaction">Recurring Transaction</string>
+    <string name="to_date">To Date</string>
+    <string name="from_date">From Date</string>
+    <string name="select_transaction_category">Select Transaction Category</string>
+    <string name="transaction_tag">Transaction Tag</string>
+    <string name="comments">Comments</string>
+    <string name="income">Income</string>
+    <string name="expense">Expense</string>
+    <string name="you_can_edit_profile">You can edit profile</string>
+    <string name="changedetails">ChangeDetails</string>
+    <string name="you_can_change_your_details">you can change your details</string>
+    <string name="day_to_day_expense">Day To Day Expense</string>
+    <string name="calendar">Calendar</string>
+    <string name="daily_expense">Daily Expense</string>
+    <string name="to_get_your_daily_expenses">To Get Your Daily Expenses</string>
+    <string name="button_to_add_transaction">Button To Add Transaction</string>
+    <string name="add_transaction">Add Transaction</string>
+    <string name="monthly_expenses">Monthly Expenses</string>
+    <string name="to_see_your_monthly_expenses">To See Your Monthly Expenses</string>
+    <string name="textview">TextView</string>
+    <string name="hi_your_name">Hi (Your Name)</string>
+    <string name="latest_transaction">Latest Transactions</string>
+    <string name="yearly_net_balanace">Yearly Net Balanace</string>
+</resources>

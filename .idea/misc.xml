@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/DATA/DATA 2/Money_Tracker/app/src/main/res/layout/activity_main.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/MY PC/Money_Tracker/app/src/main/res/drawable/ic_bus_logo.xml" value="0.25677083333333334" />
+        <entry key="..\:/Users/MY PC/Money_Tracker/app/src/main/res/drawable/ic_calendar.xml" value="0.25677083333333334" />
+        <entry key="..\:/Users/MY PC/Money_Tracker/app/src/main/res/drawable/ic_delete.xml" value="0.25677083333333334" />
+        <entry key="..\:/Users/MY PC/Money_Tracker/app/src/main/res/drawable/ic_edit_pen.xml" value="0.25677083333333334" />
+        <entry key="..\:/Users/MY PC/Money_Tracker/app/src/main/res/drawable/ic_medicine.xml" value="0.25677083333333334" />
+        <entry key="..\:/Users/MY PC/Money_Tracker/app/src/main/res/drawable/ic_person.xml" value="0.25677083333333334" />
+        <entry key="..\:/Users/MY PC/Money_Tracker/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Users/MY PC/Money_Tracker/app/src/main/res/layout/daily_item_layout.xml" value="0.240625" />
+        <entry key="..\:/Users/MY PC/Money_Tracker/app/src/main/res/layout/dialog_show.xml" value="0.4" />
+        <entry key="..\:/Users/MY PC/Money_Tracker/app/src/main/res/layout/fragment_add_transaction.xml" value="0.176" />
+        <entry key="..\:/Users/MY PC/Money_Tracker/app/src/main/res/layout/fragment_blank.xml" value="0.240625" />
+        <entry key="..\:/Users/MY PC/Money_Tracker/app/src/main/res/layout/fragment_calendar.xml" value="0.18931159420289856" />
+        <entry key="..\:/Users/MY PC/Money_Tracker/app/src/main/res/layout/fragment_daily_transaction.xml" value="0.20108695652173914" />
+        <entry key="..\:/Users/MY PC/Money_Tracker/app/src/main/res/layout/fragment_home.xml" value="0.264" />
+        <entry key="..\:/Users/MY PC/Money_Tracker/app/src/main/res/layout/fragment_month_card.xml" value="0.72" />
+        <entry key="..\:/Users/MY PC/Money_Tracker/app/src/main/res/layout/fragment_month_card_fragment.xml" value="0.264" />
+        <entry key="..\:/Users/MY PC/Money_Tracker/app/src/main/res/layout/fragment_month_list.xml" value="0.18342391304347827" />
+        <entry key="..\:/Users/MY PC/Money_Tracker/app/src/main/res/layout/fragment_montly_detail.xml" value="0.3055555555555556" />
+        <entry key="..\:/Users/MY PC/Money_Tracker/app/src/main/res/layout/fragment_onboard.xml" value="0.1793478260869565" />
+        <entry key="..\:/Users/MY PC/Money_Tracker/app/src/main/res/layout/fragment_onboarding.xml" value="0.2" />
+        <entry key="..\:/Users/MY PC/Money_Tracker/app/src/main/res/layout/fragment_user_detail.xml" value="0.264" />
+        <entry key="..\:/Users/MY PC/Money_Tracker/app/src/main/res/layout/month_card.xml" value="0.4" />
+        <entry key="..\:/Users/MY PC/Money_Tracker/app/src/main/res/layout/month_card_rv_item.xml" value="0.19519927536231885" />
+        <entry key="..\:/Users/MY PC/Money_Tracker/app/src/main/res/layout/month_detail.xml" value="0.23697916666666666" />
+        <entry key="..\:/Users/MY PC/Money_Tracker/app/src/main/res/layout/month_list_item.xml" value="0.20108695652173914" />
+        <entry key="..\:/Users/MY PC/Money_Tracker/app/src/main/res/layout/mytoolbar.xml" value="0.264" />
+        <entry key="..\:/Users/MY PC/Money_Tracker/app/src/main/res/layout/rv_item.xml" value="0.21195652173913043" />
+        <entry key="..\:/Users/MY PC/Money_Tracker/app/src/main/res/layout/transaction_list_item.xml" value="0.4" />
+        <entry key="..\:/Users/MY PC/Money_Tracker/app/src/main/res/menu/bottom_navigation.xml" value="0.240625" />
+        <entry key="..\:/Users/MY PC/Money_Tracker/app/src/main/res/menu/details_menu.xml" value="0.240625" />
+        <entry key="..\:/Users/MY PC/Money_Tracker/app/src/main/res/menu/home_menu.xml" value="0.240625" />
+        <entry key="..\:/Users/MY PC/Money_Tracker/app/src/main/res/menu/transaction_menu.xml" value="0.2" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

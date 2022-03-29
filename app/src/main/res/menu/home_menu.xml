@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/homePerson"
+          android:title="@string/changedetails"
+          android:contentDescription="@string/you_can_change_your_details"
+          android:icon="@drawable/ic_person"
+        app:showAsAction="ifRoom"/>
+<!--    <item android:icon="@drawable/ic_calendar"-->
+<!--          android:title="@string/calendar"-->
+<!--           android:contentDescription="@string/day_to_day_expense"-->
+<!--        app:showAsAction="ifRoom"-->
+<!--        android:id="@+id/homeCalendar"/>-->
+</menu>
